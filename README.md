@@ -11,6 +11,8 @@ For this project, we worked with a subset of the dataset that contained a total 
 ## Models
 We implemented neighborhood-based (KNN) and model-based (matrix factorization) collaborative filtering algorithms to recommend items to users and then compared their resulting performance against an established baseline model. The models were mainly implemented through the use of Ben Frederickson's implicit package: https://github.com/benfred/implicit
 
+In the future, we plan to incorporate more data (demographics, artist metadata) and use a more sophisticated model (Factorization Machinese, Bayesian Personalized Ranking, etc.). 
+
 ## Metrics
 The evaluation metrics used to judge each model include Recall, Non-Cumulative Discounted Gain (NDCG) and Catalog Coverage. Overall, our results suggest that an ALS-based approach is most effective in providing quality recommendations.
 
