@@ -2,7 +2,6 @@ from analysis_helper import *
 import scipy
 import numpy as np
 
-
 def active_users(data, n=5):
     """
     Identifies and returns CSR matrices representing groups of users by activity,
@@ -28,7 +27,6 @@ def active_users(data, n=5):
     groups = [scipy.sparse.csr_matrix(i) for i in groups]
 
     return groups
-
 
 def diverse_users(data, n=5):
     """
@@ -60,10 +58,6 @@ def diverse_users(data, n=5):
     groups = [scipy.sparse.csr_matrix(i) for i in groups]
 
     return groups
-
-
-# In[4]:
-
 
 def mainstream_users(data, top_artists=20, n=5):
     """
